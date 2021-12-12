@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-07 10:43:30 "/>
+        <attribute name="created" value="dXNlcjtVU0VSLVBDOzIwMjEtMTItMDc7IjA4OjI5OjA4ICI7MjE1NQ=="/>
+        <attribute name="edited" value="dXNlcjtVU0VSLVBDOzIwMjEtMTItMDc7IjEwOjQzOjMwICI7NjsyMjUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="nome &amp; &quot; sua m&#233;dia foi de &quot; &amp; media &amp; &quot; parab&#233;ns, voc&#234; passou de ano!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome &amp; &quot; sua m&#233;dia foi de &quot; &amp; media &amp; &quot; voc&#234; n&#227;o passou!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

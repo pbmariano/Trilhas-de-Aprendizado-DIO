@@ -1,0 +1,55 @@
+programa {
+	funcao inicio() {
+		
+		
+		cadeia cliente, cartao, numero, validade
+	    inteiro codigo, parcelas
+	    real valor, valorfinal, desconto
+		
+		escreva(" Digite o seu nome: \n")
+		leia (cliente)
+		escreva("Informe o valor de todos os produtos que vocên quer comprar: ")
+		leia(valor)
+		
+		escreva("Você possui caetão de crédito? (SIM OU NÃO) \n")
+	    leia (cartao)
+	    
+	    se(cartao=="NÃO"){
+	      escreva("Infelizmente só e possivel comcluir o pagemento com cartão de crédito! \n")
+	    } senao{
+	        escreva("Informe o número do cartão de crédito: ")
+	        leia(numero)
+	        escreva ("Informe o ano de valida do cartão de crédito: ")
+	        leia(validade)
+	        escreva("Informe o código de segurnça no verso do cartão: ")
+	        leia(codigo)
+	        escreva("Digite o número de parcelas entre 1 a 12 vezes: \n")
+	        leia(parcelas)
+	        
+	        se(parcelas==1){
+	            valorfinal=valor*0.85
+	            desconto=valor-valorfinal
+	            escreva("O valor a pagar é de ", valorfinal, " o seu desconto foi de ", desconto) 
+	            
+	            } senao{
+	                valorfinal=valor/parcelas
+	                escreva("O valor de cada parcela é de ", valorfinal, " em ", parcelas, " vezes SEM juros!")
+	            }
+	       
+	            
+	        
+	            
+	        
+	        
+	        
+	        
+	        
+	    }
+		
+		
+		    
+		
+		
+		
+	}
+}
